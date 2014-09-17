@@ -1,0 +1,8 @@
+<div class="Project">
+  <button data-bind="click: toggleExpanded"> Toggle </button>
+  <h1 data-bind="text: name" class="Project-title"></h1>
+  <div data-bind="visible: displayContent" class="Project-content">
+    <h2>Some content</h2>
+  </div>
+  <pre data-bind="text: ko.toJSON($data, null, 2)"></pre>
+</div>
